@@ -8,7 +8,7 @@ Educational attainment was also obtained using American Fact Finder (US Census E
 
 Life expectancy per census tract was obtained by a CDC study from the neighborhood life expectancy project (CDC). The file “2015_County_Life_Expectancy.CSV” contains this data.
 
-FIPS codes were obtained from a csv file compiled by GitHub user Kieran Healy (Healy). This file is given as “FIPS.xlsx”.
+FIPS codes were obtained from a csv file compiled by GitHub user Kieran Healy (Healy). This file is given as “FIPS.xlsx”. Only the "fips" and "county_code" columns were used.
 
 The code used to compile the map is provided in “County_HDI.py”. The resulting HDI map has been created and is provided in “US_All_County_HDI.html”.
 
@@ -22,7 +22,7 @@ Sources:
 
 “U.S. Small-area Life Expectancy Estimates Project”. CDC. 2018 August 28. https://www.cdc.gov/nchs/nvss/usaleep/usaleep.html#life-expectancy.
 
-“County and State FIPS codes”. Healy, Kieran. 2018 January 1. https://github.com/kjhealy/fips-codes/blob/master/README.md.
+“County and State FIPS codes”. Healy, Kieran. 2018 January 1. https://github.com/kjhealy/fips-codes/blob/master/county_fips_master.csv.
 
 
 
