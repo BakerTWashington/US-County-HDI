@@ -8,13 +8,13 @@ import numpy as np
 
 
 # Import tables for life expectancy and educational attainment, then concatenate educational attainment table.
-us_life = pd.read_csv('2015_County_Life_Expectancy.CSV')
+us_life = pd.read_csv('2015_County_Life_Expectancy.csv')
 us_edu1 = pd.read_csv('US_A-Ne_Edu.csv',encoding = "ISO-8859-1")
 us_edu2 = pd.read_csv('US_No-W_Edu.csv',low_memory=False)
 us_edu = pd.concat([us_edu1, us_edu2], axis=0)
 
 # Import education codes for different educational categories. Set index as county FIPS.
-county_edu_labels = pd.read_excel('County_Education_Codes.xlsx')
+county_edu_labels = pd.read_csv('County_Education_Codes.csv')
 county_edu_labels.set_index('ID',inplace=True)
 
 # Convert edu columns to usable format, then multiply by assumed number of years for each category.
@@ -61,7 +61,7 @@ us_all = pd.merge(left=us_edu_income,right=us_life,left_on='FIPS',right_on='Trac
 us_all = us_all[['Estimate; Total:','FIPS','Average Years of Education','Per Capita Income','e(0)']]
 
 # Read in FIPS codes, and extend if necessary to include '0' at beginning. Set codes index.
-FIPS_codes = pd.read_excel('FIPS.xlsx')
+FIPS_codes = pd.read_csv('FIPS.csv')
 def fix_fips(fip):
     """Extend FIPS code to include leading zeros."""
     fip = str(fip)
