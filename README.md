@@ -1,16 +1,18 @@
-Creates Human Development Index (HDI) map of the US by county. Maine and Wisconsin are not included in the map as their data was not available in the database used for life expectancy. Some counties are also excluded from the map.
+# US County Human Development Index
 
-HDI calculations based on the UNDP training manual for HDI (UNDP). The file is included as “hdi_training.pdf”.
+This repository was developed to create a Human Development Index (HDI) map of the US by county. Maine and Wisconsin are not included in the map as their data was not available in the database used for life expectancy. Some counties are also excluded from the map.
 
-Per capita income used for the income index was obtained using American Fact Finder from the US Census (US Census Per Capita Income). The data for all census tracts in each state was obtained. These csv files were subdivided into two parts, as the data tool could only handle a query of a certain size. These files were then zipped to enable upload. The zipped csv files are “US_A-NE_Tract_Income.csv.zip” and “US_No-W_Tract_Income.csv.zip”. 
+HDI calculations based on the UNDP training manual for HDI (UNDP). The file is included as `hdi_training.pdf`.
 
-Educational attainment was also obtained using American Fact Finder (US Census Educational Attainment). Again, the census tract data was subdivided based on the maximum query size of the tool. The data was subdivided into subjective categories. In order to quantitatively summarize this data, the following assumptions were made: “some high school” equates to 10 years, “high school graduate” equates to 12 years, “some college” equates to 14 years, “bachelor’s degree” equates to 16 years, and “graduate degree” equates to 18 years. These files are “US_A-NE_Edu.csv”, and “US_No-W_Edu.csv”. The codes for columns in the csv files were provided by American Fact Finder and are given in “County_Education_Codes.xlsx”.
+Per capita income used for the income index was obtained using American Fact Finder from the US Census (US Census Per Capita Income). The data for all census tracts in each state was obtained. These csv files were subdivided into two parts, as the data tool could only handle a query of a certain size. These files were then zipped to enable upload. The zipped csv files are `US_A-NE_Tract_Income.csv.zip` and `US_No-W_Tract_Income.csv.zip`. 
 
-Life expectancy per census tract was obtained by a CDC study from the neighborhood life expectancy project (CDC). The file “2015_County_Life_Expectancy.CSV” contains this data.
+Educational attainment was also obtained using American Fact Finder (US Census Educational Attainment). Again, the census tract data was subdivided based on the maximum query size of the tool. The data was subdivided into subjective categories. In order to quantitatively summarize this data, the following assumptions were made: “some high school” equates to 10 years, “high school graduate” equates to 12 years, “some college” equates to 14 years, “bachelor’s degree” equates to 16 years, and “graduate degree” equates to 18 years. These files are `US_A-NE_Edu.csv`, and `US_No-W_Edu.csv`. The codes for columns in the csv files were provided by American Fact Finder and are given in `County_Education_Codes.xlsx`.
 
-FIPS codes were obtained from a csv file compiled by GitHub user Kieran Healy (Healy). This file is given as “FIPS.xlsx”. Only the "fips" and "county_code" columns were used.
+Life expectancy per census tract was obtained by a CDC study from the neighborhood life expectancy project (CDC). The file `2015_County_Life_Expectancy.csv` contains this data.
 
-The code used to compile the map is provided in “County_HDI.py”. The resulting HDI map has been created and is provided in “US_All_County_HDI.html”.
+FIPS codes were obtained from a csv file compiled by GitHub user Kieran Healy (Healy). This file is given as `FIPS.xlsx`. Only the "fips" and "county_code" columns were used.
+
+The code used to compile the map is provided in `County_HDI.py`. The resulting HDI map has been created and is provided in `US_All_County_HDI.html`.
 
 Sources:
 
