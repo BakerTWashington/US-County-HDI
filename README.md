@@ -14,7 +14,7 @@ FIPS codes were obtained from a csv file compiled by GitHub user Kieran Healy (H
 
 The code used to compile the map is provided in `County_HDI.py`. The resulting HDI map has been created and is provided in `US_All_County_HDI.html`.
 
-Sources:
+## Sources:
 
  “Training Material for Producing National Human Development Reports”. UNDP. March 2015. http://hdr.undp.org/sites/default/files/hdi_training.pdf.
 
